@@ -18,15 +18,15 @@
         function aiChoice(){
             aiAnswer = Math.floor((Math.random() * 3) + 1);
             if (aiAnswer === 1){
-               //cc = "paper";
+               cc = "paper";
                return "paper";
             }
             else if (aiAnswer === 2){
-                //cc = "rock";
+                cc = "rock";
                 return "rock";
             }
             else if (aiAnswer === 3){
-                //cc = "scissors";
+                cc = "scissors";
                return "scissors";
             }
         }
@@ -96,7 +96,7 @@
         function play1000() {
             //Going to run 1000 times to see if all win evenly
             //going to use the aichoice function since it already grabs a random choice. This should illustrate why you make functions have a single responsibility. 
-            for (i = 1; i < 1000; i++) {
+            for (var i = 0; i < 1000; i++) {
                 play(aiChoice());
             }
         }
