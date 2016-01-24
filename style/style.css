@@ -35,3 +35,22 @@
         #total{
             color: green;
         }
+        body{
+            background-image: url(http://www.magic4walls.com/wp-content/uploads/2014/03/abstract-simple-blue-texture-lines-background-meta-hd-wallpaper.jpg);
+            color: #fff; 
+        }
+        .rock{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Y9vWMPETq8zmyp6z6iTg-pGj4JJS85j2mfeJavAYn_q0Mz4UHQ);
+            height: 100px;
+        }
+        .scissors{
+            background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTquLq6qXfWxzaziqjm4POqo9zn4X_kckj9Vu57fRlfZbM10x5YTw);
+            height: 100px;
+        }
+        .paper{
+            background-image: url(http://www.socialmediatoday.com/sites/default/files/post_main_images/white-papers.jpg);
+            height: 100px;
+        }
+        .container{
+            width: 100%;
+        }

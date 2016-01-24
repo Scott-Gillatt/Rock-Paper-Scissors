@@ -18,21 +18,27 @@
     <!-- Player selects a button which calls the function play and passing along the vaule
     thats inside the ('') to the play functoin.  Play function takes that vaule as playerChoice
     and then excutes the play  -->
-    <button class="mycenter btn btn-primary btn-block" onclick="play('paper')"><i class="fa fa-hand-paper-o"></i>(Paper)</button>
-    <button class="mycenter btn btn-primary btn-block" onclick="play('rock')"><i class="fa fa-hand-rock-o"></i>(Rock)</button>
-    <button class="mycenter btn btn-primary btn-block" onclick="play('scissors')"><i class="fa fa-hand-scissors-o"></i>(Scissors)</button>
+    <div class="container">
+    <div class="paper col-md-4"><button class="mycenter btn btn-danger btn-block" onclick="play('paper')"><i class="fa fa-hand-paper-o"></i> (Paper)</button></div>
+    <div class="rock col-md-4"><button class="mycenter btn btn-danger btn-block" onclick="play('rock')"><i class="fa fa-hand-rock-o"></i> (Rock)</button></div>
+    <div class="scissors col-md-4"><button class="mycenter btn btn-danger btn-block" onclick="play('scissors')"><i class="fa fa-hand-scissors-o"></i> (Scissors)</button></div>
     <!-- pc = PlayerChoice and cc = ComputerChoice -->
     <p>You picked <span id="pc">?</span> and the computer picked <span id="cc">?</span></p>
     <!-- This is the place holder to show who won -->
     <p>The Winner is <span id="winner">?</span></p>
+    </div>
     <div>
-    <p>Player Total Wins:<span id="ptw">0</span> Total Ties:<span id="ties">0</span> Computers Total Wins:<span id="ctw">0</span><br>Total Plays:<span id="total">0</span></p>
+        <p>Player Total Wins:<span id="ptw">0</span>(<span id="ptw%">0</span>%) Total Ties:<span id="ties">0</span>(<span id="ties%">0</span>%)
+            Computers Total Wins:<span id="ctw">0</span>(<span id="ctw%">0</span>%)
+            <br>Total Plays:<span id="total">0</span></p>
     </div>
 
     <!--SS Adding this button to show how to have it test 1000 tries-->
-    <button class="mycenter btn btn-primary btn-block" onclick="play1000()"><i class="fa fa-hand-scissors-o"></i>Play 1,000 times.</button>
+    <button class="mycenter btn btn-danger btn-block" onclick="play1000()"><i class="fa fa-random">(Random)</i> Play 1,000 times .</button>
 
-    <script src="javascript/javascript.js">    </script>
+    <script src="javascript/javascript.js">
+
+    </script>
 </body>
 
 </html>

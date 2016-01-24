@@ -6,8 +6,11 @@
         var cc;
         var total = 0;
         var pw = 0;
+        var pwper = 0;
         var cw = 0;
+        var cwper = 0;
         var tie = 0;
+        var tieper = 0;
         
         //Chooseing AI answer by generateing a whole number between 1 - 3
     //Then taking the whole number and assinging it a choice
@@ -41,6 +44,7 @@
             AI = aiChoice();
             game(playerChoice, AI);
             tally(winner);
+            percentage();
             declare_winner(winner);
         }
         
@@ -62,8 +66,9 @@
             }
         }
         
-        //prints what the player picked and what the computer picked
-        //then tells the player who won
+        //Prints what the player picked and what the computer picked
+        //Then tells the player who won
+        //Prints to HTML the picks, wins, percentages, and totals
         function declare_winner(winner){
           document.getElementById("pc").textContent = pc;
           document.getElementById("cc").textContent = cc;
@@ -72,6 +77,9 @@
           document.getElementById("ties").textContent = tie;
           document.getElementById("ctw").textContent = cw;
           document.getElementById("total").textContent = total;
+          document.getElementById("ptw%").textContent = pwper;
+          document.getElementById("ctw%").textContent = cwper;
+          document.getElementById("ties%").textContent = tieper;
           
         }
         
@@ -99,4 +107,12 @@
             for (var i = 0; i < 1000; i++) {
                 play(aiChoice());
             }
+        }
+        
+        //Taking the wins for computer, player, and ties to figure out the % of wins from the total plays
+        function percentage(){
+            pwper = Math.round((pw / total) * 100);
+            cwper = Math.round((cw / total) * 100);
+            tieper = Math.round((tie / total) * 100);
+            return;
         }
