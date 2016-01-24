@@ -1,0 +1,37 @@
+#pc {
+            color: red;
+        }
+        
+        #cc {
+            color: blue;
+        }
+        
+        #winner {
+            font-size: 30px;
+            color: green;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        .mycenter {
+            font-variant: small-caps;
+            border: solid 2px black;
+        }
+        #ptw {
+            color: red;
+        }
+        #ctw{
+            color: blue;
+        }
+        #ties{
+            color: orange;
+        }
+        #total{
+            color: green;
+        }

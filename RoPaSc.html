@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <h1>Can you beat the AI? Choose carefully!! <br>
+    Choose Paper, Rock, or Scissors
+    </h1>
+    <!-- Player selects a button which calls the function play and passing along the vaule
+    thats inside the ('') to the play functoin.  Play function takes that vaule as playerChoice
+    and then excutes the play  -->
+    <button class="mycenter btn btn-primary btn-block" onclick="play('paper')"><i class="fa fa-hand-paper-o"></i>(Paper)</button>
+    <button class="mycenter btn btn-primary btn-block" onclick="play('rock')"><i class="fa fa-hand-rock-o"></i>(Rock)</button>
+    <button class="mycenter btn btn-primary btn-block" onclick="play('scissors')"><i class="fa fa-hand-scissors-o"></i>(Scissors)</button>
+    <!-- pc = PlayerChoice and cc = ComputerChoice -->
+    <p>You picked <span id="pc">?</span> and the computer picked <span id="cc">?</span></p>
+    <!-- This is the place holder to show who won -->
+    <p>The Winner is <span id="winner">?</span></p>
+    <div>
+    <p>Player Total Wins:<span id="ptw">0</span> Total Ties:<span id="ties">0</span> Computers Total Wins:<span id="ctw">0</span><br>Total Plays:<span id="total">0</span></p>
+    </div>
+
+    <script src="javascript/javascript.js">    </script>
+</body>
+
+</html>
