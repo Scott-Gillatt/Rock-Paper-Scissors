@@ -1,5 +1,5 @@
 #pc {
-            color: red;
+            color: mediumturquoise ;
         }
         
         #cc {
@@ -8,7 +8,7 @@
         
         #winner {
             font-size: 30px;
-            color: green;
+            color: springgreen;
         }
         
         h1 {
@@ -24,7 +24,7 @@
             border: solid 2px black;
         }
         #ptw {
-            color: red;
+            color: mediumturquoise ;
         }
         #ctw{
             color: blue;
@@ -33,7 +33,7 @@
             color: orange;
         }
         #total{
-            color: green;
+            color: springgreen;
         }
         body{
             background-image: url(http://www.magic4walls.com/wp-content/uploads/2014/03/abstract-simple-blue-texture-lines-background-meta-hd-wallpaper.jpg);
