@@ -10,19 +10,23 @@
         var tie = 0;
         
         //Chooseing AI answer by generateing a whole number between 1 - 3
-        //Then taking the whole number and assinging it a choice
+    //Then taking the whole number and assinging it a choice
+
+        /*SS I don't think you need the cc in here. You either return a parameter or set it to a global variable. 
+        Returning is better because it allows the method to be repurposed as I did either. 
+        I commented out the CC since it is not needed.*/
         function aiChoice(){
             aiAnswer = Math.floor((Math.random() * 3) + 1);
             if (aiAnswer === 1){
-               cc = "paper";
+               //cc = "paper";
                return "paper";
             }
             else if (aiAnswer === 2){
-                cc = "rock";
+                //cc = "rock";
                 return "rock";
             }
             else if (aiAnswer === 3){
-                cc = "scissors";
+                //cc = "scissors";
                return "scissors";
             }
         }
@@ -86,5 +90,13 @@
             else {
               tie = tie + 1;  
               return
+            }
+        }
+        /*SS writing this function to test the results across a 1000 tries. Also not the reuse of an earlier function for a slightly different purpose.*/
+        function play1000() {
+            //Going to run 1000 times to see if all win evenly
+            //going to use the aichoice function since it already grabs a random choice. This should illustrate why you make functions have a single responsibility. 
+            for (i = 1; i < 1000; i++) {
+                play(aiChoice());
             }
         }
