@@ -1,5 +1,4 @@
 var winner;
-var playerChoice;
 var AI;
 var aiAnswer;
 var pc;
@@ -49,19 +48,12 @@ function play(playerChoice) {
 }
 
 function game(playerChoice, AI) {
-    if (playerChoice === "paper" && AI === "paper") {
+    if (playerChoice === AI) {
         winner = "TIE!!";
-    } else if (playerChoice === "paper" && AI === "rock") {
+    } else if ((playerChoice === "paper" && AI === "rock") || (playerChoice === "rock" && AI === "scissors") || (playerChoice === "scissors" && AI === "paper") ) {
         winner = "Player!";
-    } else if (playerChoice === "rock" && AI === "rock") {
-        winner = "TIE!!";
-    } else if (playerChoice === "rock" && AI === "scissors") {
-        winner = "Player!";
-    } else if (playerChoice === "scissors" && AI === "scissors") {
-        winner = "TIE!!";
-    } else if (playerChoice === "scissors" && AI === "paper") {
-        winner = "Player!";
-    } else {
+    } 
+     else {
         winner = "AI";
     }
 }
@@ -88,15 +80,15 @@ function declare_winner(winner) {
 function tally(winner) {
     total = total + 1;
     if (winner === "Player!") {
-        pw = pw + 1;
+        pw++;
         return
     }
     else if (winner === "AI") {
-        cw = cw + 1;
+        cw ++;
         return
     }
     else {
-        tie = tie + 1;
+        tie ++;
         return
     }
 }
